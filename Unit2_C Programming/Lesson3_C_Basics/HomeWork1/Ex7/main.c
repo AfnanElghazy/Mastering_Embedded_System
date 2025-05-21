@@ -1,0 +1,31 @@
+/*
+ * main.c
+ *
+ *  Created on: May 21, 2025
+ *      Author: VICTUS
+ */
+
+#include <stdio.h>
+
+int main() {
+    float a, b;
+
+    printf("Enter value of a: ");
+    fflush(stdout);
+    scanf("%f", &a);
+
+    printf("Enter value of b: ");
+    fflush(stdout);
+    scanf("%f", &b);
+
+    // Swap without temp variable
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    printf("\nAfter swapping, value of a = %g\n", a);
+    printf("After swapping, value of b = %g\n", b);
+
+    return 0;
+}
+
